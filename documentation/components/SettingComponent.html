@@ -1,0 +1,315 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>test-angular-console documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">test-angular-console documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>SettingComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/flex-layout/flex-layout.component.ts</code>
+</p>
+
+
+
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-setting</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">template</td>
+                <td class="col-md-9"><pre class="line-numbers"><code class="language-html">&lt;label&gt;Would you like dog picks every in ??&lt;/label&gt;&lt;mat-slide-toggle&gt;&lt;/mat-slide-toggle&gt;</code></pre></td>
+            </tr>
+
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {AfterContentInit, Component, OnInit, ViewChild, ViewContainerRef} from &#x27;@angular/core&#x27;;
+import {animate, style, transition, trigger} from &#x27;@angular/animations&#x27;;
+import {MatDialog, MatDialogConfig, MatGridList, MatSidenav} from &#x27;@angular/material&#x27;;
+import {MediaChange, ObservableMedia} from &#x27;@angular/flex-layout&#x27;;
+
+@Component({
+  selector: &#x27;app-setting&#x27;,
+  template: &#x27;&lt;label&gt;Would you like dog picks every in ??&lt;/label&gt;&lt;mat-slide-toggle&gt;&lt;/mat-slide-toggle&gt;&#x27;
+})
+export class SettingComponent {}
+
+@Component({
+  selector: &#x27;app-flex-layout&#x27;,
+  templateUrl: &#x27;./flex-layout.component.html&#x27;,
+  styleUrls: [&#x27;./flex-layout.component.css&#x27;],
+  animations: [
+    trigger(&#x27;myInsertRemoveTrigger&#x27;, [
+      transition(&#x27;:enter&#x27;, [
+        style({ opacity: 0, transform: &#x27;translateY(-100px)&#x27; }),
+        animate(&#x27;300ms 1s ease-out&#x27;, style({ opacity: 1, transform: &#x27;none&#x27; })),
+      ])
+    ])
+  ]
+})
+export class FlexLayoutComponent implements AfterContentInit {
+
+  title &#x3D; &#x27;flexlayout-project&#x27;;
+  @ViewChild(&#x27;sidenav&#x27;) sidenav: MatSidenav;
+  currentDog &#x3D; {};
+  isDarkTheme &#x3D; false;
+  dogs &#x3D; [
+    {
+      row: 1,
+      name : &#x27;Titre 1&#x27;,
+      t: &#x27;Lucas&#x27;,
+      img : &#x27;https://images.pexels.com/photos/940380/pexels-photo-940380.jpeg?auto&#x3D;compress&amp;cs&#x3D;tinysrgb&amp;dpr&#x3D;2&amp;h&#x3D;650&amp;w&#x3D;940&#x27;
+    },
+    {
+      row: 1,
+      name : &#x27;Titre 2&#x27;,
+      t: &#x27;Duret&#x27;,
+      img : &#x27;https://images.pexels.com/photos/991012/pexels-photo-991012.jpeg?auto&#x3D;compress&amp;cs&#x3D;tinysrgb&amp;dpr&#x3D;2&amp;h&#x3D;400&amp;w&#x3D;940&#x27;
+    },
+    {
+      row: 1,
+      t: &#x27;Quentin&#x27;,
+      name : &#x27;Titre 3&#x27;,
+      img : &#x27;https://images.pexels.com/photos/701449/pexels-photo-701449.jpeg?auto&#x3D;compress&amp;cs&#x3D;tinysrgb&amp;dpr&#x3D;2&amp;h&#x3D;650&amp;w&#x3D;940&#x27;
+    },
+    {
+      row: 1,
+      name : &#x27;Titre 4&#x27;,
+      t: &#x27;Fuleau&#x27;,
+      img : &#x27;https://images.pexels.com/photos/946351/pexels-photo-946351.jpeg?auto&#x3D;compress&amp;cs&#x3D;tinysrgb&amp;dpr&#x3D;2&amp;h&#x3D;650&amp;w&#x3D;940&#x27;
+    },
+    {
+      row: 1,
+      name : &#x27;Titre 5&#x27;,
+      t: &#x27;ENSC&#x27;,
+      img : &#x27;https://images.pexels.com/photos/305535/pexels-photo-305535.jpeg?auto&#x3D;compress&amp;cs&#x3D;tinysrgb&amp;dpr&#x3D;2&amp;h&#x3D;650&amp;w&#x3D;940&#x27;
+    },
+    {
+      row: 1,
+      t: &#x27;Quentin nnn&#x27;,
+      name : &#x27;Titre sss3&#x27;,
+      img : &#x27;https://images.pexels.com/photos/1458695/pexels-photo-1458695.jpeg?auto&#x3D;compress&amp;cs&#x3D;tinysrgb&amp;dpr&#x3D;2&amp;h&#x3D;650&amp;w&#x3D;940&#x27;},
+    {
+      row: 1,
+      name : &#x27;Tisstre 4&#x27;,
+      t: &#x27;Fulssseau&#x27;,
+      img : &#x27;https://images.pexels.com/photos/697243/pexels-photo-697243.jpeg?auto&#x3D;compress&amp;cs&#x3D;tinysrgb&amp;h&#x3D;650&amp;w&#x3D;940&#x27;},
+    {
+      row: 1,
+      name : &#x27;Titsssre 5&#x27;,
+      t: &#x27;ENsssqqSC&#x27;,
+      img : &#x27;https://images.pexels.com/photos/1654476/pexels-photo-1654476.jpeg?auto&#x3D;compress&amp;cs&#x3D;tinysrgb&amp;h&#x3D;650&amp;w&#x3D;940&#x27;}
+  ];
+  @ViewChild(&#x27;grid&#x27;) grid: MatGridList;
+  gridByBreakpoint &#x3D; {xl: 5, lg: 4, md: 3, sm: 2, xs: 1 };
+
+  constructor(public dialog: MatDialog, public vcr: ViewContainerRef, private observableMedia: ObservableMedia) {
+  }
+
+  ngAfterContentInit() {
+    this.observableMedia.asObservable().subscribe((change: MediaChange) &#x3D;&gt; {
+      this.grid.cols &#x3D; this.gridByBreakpoint[change.mqAlias];
+    });
+  }
+
+  openDialog() {
+    const config &#x3D; new MatDialogConfig();
+    config.viewContainerRef &#x3D; this.vcr;
+    this.dialog.open(SettingComponent, config);
+  }
+
+  show(dog) {
+    this.currentDog &#x3D; dog;
+    this.sidenav.open();
+  }
+
+}
+</code></pre>
+    </div>
+
+
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><label>Would you like dog picks every in ??</label><mat-slide-toggle></mat-slide-toggle></div>'
+    var COMPONENTS = [{'name': 'AdressFormComponent', 'selector': 'app-adress-form'},{'name': 'AgGridComponent', 'selector': 'app-ag-grid'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'DashboardComponent', 'selector': 'app-dashboard'},{'name': 'FlexLayoutComponent', 'selector': 'app-flex-layout'},{'name': 'NavMainComponent', 'selector': 'app-nav-main'},{'name': 'SettingComponent', 'selector': 'app-setting'},{'name': 'TableComponent', 'selector': 'app-table'},{'name': 'TreeComponent', 'selector': 'app-tree'},{'name': 'VerticalTimelineComponent', 'selector': 'app-vertical-timeline'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'SettingComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'SettingComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

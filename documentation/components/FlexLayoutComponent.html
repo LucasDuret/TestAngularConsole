@@ -1,0 +1,1161 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>test-angular-console documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">test-angular-console documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>FlexLayoutComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/flex-layout/flex-layout.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                <code><a href="https://angular.io/api/core/AfterContentInit" target="_blank" >AfterContentInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-flex-layout</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./flex-layout.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./flex-layout.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#currentDog">currentDog</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#dialog">dialog</a>
+                            </li>
+                            <li>
+                                <a href="#dogs">dogs</a>
+                            </li>
+                            <li>
+                                <a href="#grid">grid</a>
+                            </li>
+                            <li>
+                                <a href="#gridByBreakpoint">gridByBreakpoint</a>
+                            </li>
+                            <li>
+                                <a href="#isDarkTheme">isDarkTheme</a>
+                            </li>
+                            <li>
+                                <a href="#sidenav">sidenav</a>
+                            </li>
+                            <li>
+                                <a href="#title">title</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#vcr">vcr</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#ngAfterContentInit">ngAfterContentInit</a>
+                            </li>
+                            <li>
+                                <a href="#openDialog">openDialog</a>
+                            </li>
+                            <li>
+                                <a href="#show">show</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(dialog: MatDialog, vcr: <a href="https://angular.io/api/core/ViewContainerRef" target="_blank">ViewContainerRef</a>, observableMedia: ObservableMedia)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="79" class="link-to-prism">src/app/flex-layout/flex-layout.component.ts:79</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>dialog</td>
+                                                  
+                                                        <td>
+                                                                    <code>MatDialog</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>vcr</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="https://angular.io/api/core/ViewContainerRef" target="_blank" >ViewContainerRef</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>observableMedia</td>
+                                                  
+                                                        <td>
+                                                                    <code>ObservableMedia</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+        <h3 id="methods">
+            Methods
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="ngAfterContentInit"></a>
+                        <span class="name">
+                            <b>
+                            ngAfterContentInit
+                            </b>
+                            <a href="#ngAfterContentInit"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>ngAfterContentInit()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="84" class="link-to-prism">src/app/flex-layout/flex-layout.component.ts:84</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="openDialog"></a>
+                        <span class="name">
+                            <b>
+                            openDialog
+                            </b>
+                            <a href="#openDialog"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>openDialog()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="90" class="link-to-prism">src/app/flex-layout/flex-layout.component.ts:90</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="show"></a>
+                        <span class="name">
+                            <b>
+                            show
+                            </b>
+                            <a href="#show"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>show(dog)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="96" class="link-to-prism">src/app/flex-layout/flex-layout.component.ts:96</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>dog</td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="currentDog"></a>
+                        <span class="name">
+                            <b>
+                            currentDog
+                            </b>
+                            <a href="#currentDog"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>currentDog:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{}</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/flex-layout/flex-layout.component.ts:29</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="dialog"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            dialog
+                            </b>
+                            <a href="#dialog"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>dialog:     <code>MatDialog</code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>MatDialog</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="81" class="link-to-prism">src/app/flex-layout/flex-layout.component.ts:81</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="dogs"></a>
+                        <span class="name">
+                            <b>
+                            dogs
+                            </b>
+                            <a href="#dogs"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>dogs:     <code>[]</code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[
+    {
+      row: 1,
+      name : &#x27;Titre 1&#x27;,
+      t: &#x27;Lucas&#x27;,
+      img : &#x27;https://images.pexels.com/photos/940380/pexels-photo-940380.jpeg?auto&#x3D;compress&amp;cs&#x3D;tinysrgb&amp;dpr&#x3D;2&amp;h&#x3D;650&amp;w&#x3D;940&#x27;
+    },
+    {
+      row: 1,
+      name : &#x27;Titre 2&#x27;,
+      t: &#x27;Duret&#x27;,
+      img : &#x27;https://images.pexels.com/photos/991012/pexels-photo-991012.jpeg?auto&#x3D;compress&amp;cs&#x3D;tinysrgb&amp;dpr&#x3D;2&amp;h&#x3D;400&amp;w&#x3D;940&#x27;
+    },
+    {
+      row: 1,
+      t: &#x27;Quentin&#x27;,
+      name : &#x27;Titre 3&#x27;,
+      img : &#x27;https://images.pexels.com/photos/701449/pexels-photo-701449.jpeg?auto&#x3D;compress&amp;cs&#x3D;tinysrgb&amp;dpr&#x3D;2&amp;h&#x3D;650&amp;w&#x3D;940&#x27;
+    },
+    {
+      row: 1,
+      name : &#x27;Titre 4&#x27;,
+      t: &#x27;Fuleau&#x27;,
+      img : &#x27;https://images.pexels.com/photos/946351/pexels-photo-946351.jpeg?auto&#x3D;compress&amp;cs&#x3D;tinysrgb&amp;dpr&#x3D;2&amp;h&#x3D;650&amp;w&#x3D;940&#x27;
+    },
+    {
+      row: 1,
+      name : &#x27;Titre 5&#x27;,
+      t: &#x27;ENSC&#x27;,
+      img : &#x27;https://images.pexels.com/photos/305535/pexels-photo-305535.jpeg?auto&#x3D;compress&amp;cs&#x3D;tinysrgb&amp;dpr&#x3D;2&amp;h&#x3D;650&amp;w&#x3D;940&#x27;
+    },
+    {
+      row: 1,
+      t: &#x27;Quentin nnn&#x27;,
+      name : &#x27;Titre sss3&#x27;,
+      img : &#x27;https://images.pexels.com/photos/1458695/pexels-photo-1458695.jpeg?auto&#x3D;compress&amp;cs&#x3D;tinysrgb&amp;dpr&#x3D;2&amp;h&#x3D;650&amp;w&#x3D;940&#x27;},
+    {
+      row: 1,
+      name : &#x27;Tisstre 4&#x27;,
+      t: &#x27;Fulssseau&#x27;,
+      img : &#x27;https://images.pexels.com/photos/697243/pexels-photo-697243.jpeg?auto&#x3D;compress&amp;cs&#x3D;tinysrgb&amp;h&#x3D;650&amp;w&#x3D;940&#x27;},
+    {
+      row: 1,
+      name : &#x27;Titsssre 5&#x27;,
+      t: &#x27;ENsssqqSC&#x27;,
+      img : &#x27;https://images.pexels.com/photos/1654476/pexels-photo-1654476.jpeg?auto&#x3D;compress&amp;cs&#x3D;tinysrgb&amp;h&#x3D;650&amp;w&#x3D;940&#x27;}
+  ]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/flex-layout/flex-layout.component.ts:31</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="grid"></a>
+                        <span class="name">
+                            <b>
+                            grid
+                            </b>
+                            <a href="#grid"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>grid:     <code>MatGridList</code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>MatGridList</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @ViewChild(&#x27;grid&#x27;)<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="78" class="link-to-prism">src/app/flex-layout/flex-layout.component.ts:78</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="gridByBreakpoint"></a>
+                        <span class="name">
+                            <b>
+                            gridByBreakpoint
+                            </b>
+                            <a href="#gridByBreakpoint"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>gridByBreakpoint:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{xl: 5, lg: 4, md: 3, sm: 2, xs: 1 }</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="79" class="link-to-prism">src/app/flex-layout/flex-layout.component.ts:79</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isDarkTheme"></a>
+                        <span class="name">
+                            <b>
+                            isDarkTheme
+                            </b>
+                            <a href="#isDarkTheme"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>isDarkTheme:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/flex-layout/flex-layout.component.ts:30</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="sidenav"></a>
+                        <span class="name">
+                            <b>
+                            sidenav
+                            </b>
+                            <a href="#sidenav"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>sidenav:     <code>MatSidenav</code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>MatSidenav</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @ViewChild(&#x27;sidenav&#x27;)<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/flex-layout/flex-layout.component.ts:28</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="title"></a>
+                        <span class="name">
+                            <b>
+                            title
+                            </b>
+                            <a href="#title"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>title:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x27;flexlayout-project&#x27;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/flex-layout/flex-layout.component.ts:27</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="vcr"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            vcr
+                            </b>
+                            <a href="#vcr"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>vcr:     <code><a href="https://angular.io/api/core/ViewContainerRef" target="_blank" >ViewContainerRef</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://angular.io/api/core/ViewContainerRef" target="_blank" >ViewContainerRef</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="81" class="link-to-prism">src/app/flex-layout/flex-layout.component.ts:81</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {AfterContentInit, Component, OnInit, ViewChild, ViewContainerRef} from &#x27;@angular/core&#x27;;
+import {animate, style, transition, trigger} from &#x27;@angular/animations&#x27;;
+import {MatDialog, MatDialogConfig, MatGridList, MatSidenav} from &#x27;@angular/material&#x27;;
+import {MediaChange, ObservableMedia} from &#x27;@angular/flex-layout&#x27;;
+
+@Component({
+  selector: &#x27;app-setting&#x27;,
+  template: &#x27;&lt;label&gt;Would you like dog picks every in ??&lt;/label&gt;&lt;mat-slide-toggle&gt;&lt;/mat-slide-toggle&gt;&#x27;
+})
+export class SettingComponent {}
+
+@Component({
+  selector: &#x27;app-flex-layout&#x27;,
+  templateUrl: &#x27;./flex-layout.component.html&#x27;,
+  styleUrls: [&#x27;./flex-layout.component.css&#x27;],
+  animations: [
+    trigger(&#x27;myInsertRemoveTrigger&#x27;, [
+      transition(&#x27;:enter&#x27;, [
+        style({ opacity: 0, transform: &#x27;translateY(-100px)&#x27; }),
+        animate(&#x27;300ms 1s ease-out&#x27;, style({ opacity: 1, transform: &#x27;none&#x27; })),
+      ])
+    ])
+  ]
+})
+export class FlexLayoutComponent implements AfterContentInit {
+
+  title &#x3D; &#x27;flexlayout-project&#x27;;
+  @ViewChild(&#x27;sidenav&#x27;) sidenav: MatSidenav;
+  currentDog &#x3D; {};
+  isDarkTheme &#x3D; false;
+  dogs &#x3D; [
+    {
+      row: 1,
+      name : &#x27;Titre 1&#x27;,
+      t: &#x27;Lucas&#x27;,
+      img : &#x27;https://images.pexels.com/photos/940380/pexels-photo-940380.jpeg?auto&#x3D;compress&amp;cs&#x3D;tinysrgb&amp;dpr&#x3D;2&amp;h&#x3D;650&amp;w&#x3D;940&#x27;
+    },
+    {
+      row: 1,
+      name : &#x27;Titre 2&#x27;,
+      t: &#x27;Duret&#x27;,
+      img : &#x27;https://images.pexels.com/photos/991012/pexels-photo-991012.jpeg?auto&#x3D;compress&amp;cs&#x3D;tinysrgb&amp;dpr&#x3D;2&amp;h&#x3D;400&amp;w&#x3D;940&#x27;
+    },
+    {
+      row: 1,
+      t: &#x27;Quentin&#x27;,
+      name : &#x27;Titre 3&#x27;,
+      img : &#x27;https://images.pexels.com/photos/701449/pexels-photo-701449.jpeg?auto&#x3D;compress&amp;cs&#x3D;tinysrgb&amp;dpr&#x3D;2&amp;h&#x3D;650&amp;w&#x3D;940&#x27;
+    },
+    {
+      row: 1,
+      name : &#x27;Titre 4&#x27;,
+      t: &#x27;Fuleau&#x27;,
+      img : &#x27;https://images.pexels.com/photos/946351/pexels-photo-946351.jpeg?auto&#x3D;compress&amp;cs&#x3D;tinysrgb&amp;dpr&#x3D;2&amp;h&#x3D;650&amp;w&#x3D;940&#x27;
+    },
+    {
+      row: 1,
+      name : &#x27;Titre 5&#x27;,
+      t: &#x27;ENSC&#x27;,
+      img : &#x27;https://images.pexels.com/photos/305535/pexels-photo-305535.jpeg?auto&#x3D;compress&amp;cs&#x3D;tinysrgb&amp;dpr&#x3D;2&amp;h&#x3D;650&amp;w&#x3D;940&#x27;
+    },
+    {
+      row: 1,
+      t: &#x27;Quentin nnn&#x27;,
+      name : &#x27;Titre sss3&#x27;,
+      img : &#x27;https://images.pexels.com/photos/1458695/pexels-photo-1458695.jpeg?auto&#x3D;compress&amp;cs&#x3D;tinysrgb&amp;dpr&#x3D;2&amp;h&#x3D;650&amp;w&#x3D;940&#x27;},
+    {
+      row: 1,
+      name : &#x27;Tisstre 4&#x27;,
+      t: &#x27;Fulssseau&#x27;,
+      img : &#x27;https://images.pexels.com/photos/697243/pexels-photo-697243.jpeg?auto&#x3D;compress&amp;cs&#x3D;tinysrgb&amp;h&#x3D;650&amp;w&#x3D;940&#x27;},
+    {
+      row: 1,
+      name : &#x27;Titsssre 5&#x27;,
+      t: &#x27;ENsssqqSC&#x27;,
+      img : &#x27;https://images.pexels.com/photos/1654476/pexels-photo-1654476.jpeg?auto&#x3D;compress&amp;cs&#x3D;tinysrgb&amp;h&#x3D;650&amp;w&#x3D;940&#x27;}
+  ];
+  @ViewChild(&#x27;grid&#x27;) grid: MatGridList;
+  gridByBreakpoint &#x3D; {xl: 5, lg: 4, md: 3, sm: 2, xs: 1 };
+
+  constructor(public dialog: MatDialog, public vcr: ViewContainerRef, private observableMedia: ObservableMedia) {
+  }
+
+  ngAfterContentInit() {
+    this.observableMedia.asObservable().subscribe((change: MediaChange) &#x3D;&gt; {
+      this.grid.cols &#x3D; this.gridByBreakpoint[change.mqAlias];
+    });
+  }
+
+  openDialog() {
+    const config &#x3D; new MatDialogConfig();
+    config.viewContainerRef &#x3D; this.vcr;
+    this.dialog.open(SettingComponent, config);
+  }
+
+  show(dog) {
+    this.currentDog &#x3D; dog;
+    this.sidenav.open();
+  }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div [class.dark-theme]&#x3D;&quot;isDarkTheme&quot;&gt;
+  &lt;mat-toolbar color&#x3D;&quot;primary&quot; fxLayout&#x3D;&quot;row&quot; fxLayoutAlign&#x3D;&quot;space-between center&quot;&gt;
+    &lt;span&gt;
+      &lt;mat-icon class&#x3D;&quot;pets--marginRight&quot;&gt;pets&lt;/mat-icon&gt;
+      Tests Pets
+    &lt;/span&gt;
+    &lt;div&gt;
+      &lt;button mat-icon-button [matMenuTriggerFor]&#x3D;&quot;menu&quot;&gt;
+        &lt;mat-icon&gt;more_vert&lt;/mat-icon&gt;
+      &lt;/button&gt;
+      &lt;mat-menu #menu&#x3D;&quot;matMenu&quot; xPosition&#x3D;&quot;before&quot;&gt;
+        &lt;button (click)&#x3D;&quot;openDialog()&quot; mat-menu-item&gt;
+          &lt;span&gt;Setting&lt;/span&gt;
+        &lt;/button&gt;
+        &lt;button mat-menu-item&gt;
+          &lt;span&gt;Help&lt;/span&gt;
+        &lt;/button&gt;
+        &lt;button mat-menu-item (click)&#x3D;&quot;isDarkTheme&#x3D;!isDarkTheme&quot;&gt;
+          &lt;span&gt;Toggle theme&lt;/span&gt;
+        &lt;/button&gt;
+      &lt;/mat-menu&gt;
+    &lt;/div&gt;
+  &lt;/mat-toolbar&gt;
+  &lt;mat-sidenav-container class&#x3D;&quot;example-container&quot;&gt;
+    &lt;mat-sidenav position&#x3D;&quot;end&quot; mode&#x3D;&quot;side&quot; #sidenav&gt;
+
+      &lt;mat-tab-group&gt;
+        &lt;mat-tab label&#x3D;&quot;Details&quot;&gt;
+          &lt;p&gt;Name : {{currentDog.name}}&lt;/p&gt;
+          &lt;p&gt;T : {{currentDog.t}}&lt;/p&gt;
+          &lt;button class&#x3D;&quot;buttonClose&quot; mat-raised-button color&#x3D;&quot;accent&quot; (click)&#x3D;&quot;sidenav.close()&quot;&gt;Close&lt;/button&gt;
+        &lt;/mat-tab&gt;
+        &lt;mat-tab label&#x3D;&quot;Feed&quot;  &gt;
+          &lt;div fxLayout&#x3D;&quot;column&quot; fxFlex fxLayoutAlign&#x3D;&quot;end end&quot;&gt;
+            &lt;button mat-raised-button&gt;Item 1&lt;/button&gt;
+            &lt;button mat-raised-button&gt;Item 2&lt;/button&gt;
+            &lt;button mat-raised-button&gt;Item 3&lt;/button&gt;
+            &lt;button mat-raised-button&gt;Item 4&lt;/button&gt;
+            &lt;button mat-raised-button&gt;Item 5&lt;/button&gt;
+            &lt;button mat-raised-button&gt;Item 11&lt;/button&gt;
+            &lt;button mat-raised-button&gt;Item 12&lt;/button&gt;
+            &lt;button mat-raised-button&gt;Item 13&lt;/button&gt;
+            &lt;button mat-raised-button&gt;Item 14&lt;/button&gt;
+            &lt;button mat-raised-button&gt;Item 15&lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/mat-tab&gt;
+        &lt;mat-tab label&#x3D;&quot;Zone&quot;&gt;
+          &lt;div fxFlex fxLayout&#x3D;&quot;row&quot; fxLayout.xs&#x3D;&quot;column&quot; style&#x3D;&quot;height: 100px;&quot;&gt;
+            &lt;div fxFlex&#x3D;&quot;1 6 20%&quot; fxFlexOrder.xs&#x3D;&quot;2&quot; style&#x3D;&quot;background-color: indianred&quot;&gt;&lt;/div&gt;
+            &lt;div fxFlex&#x3D;&quot;3 1 60%&quot; fxFlexOrder.xs&#x3D;&quot;1&quot; style&#x3D;&quot;background-color: cornflowerblue&quot;&gt;&lt;/div&gt;
+            &lt;div fxFlex&#x3D;&quot;1 6 20%&quot; fxFlexOrder.xs&#x3D;&quot;3&quot; style&#x3D;&quot;background-color: aquamarine&quot;&gt;&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div
+            style&#x3D;&quot;font-style: italic; height: 10%;&quot;
+            [ngStyle.xs]&#x3D;&quot;{&#x27;font-size.px&#x27;: 10, &#x27;background-color&#x27;: &#x27;red&#x27;,color: &#x27;blue&#x27;}&quot;
+            [ngStyle.sm]&#x3D;&quot;{&#x27;font-size.px&#x27;: 20, &#x27;background-color&#x27;: &#x27;blue&#x27;,color: &#x27;lightblue&#x27;}&quot;
+            [ngStyle.md]&#x3D;&quot;{&#x27;font-size.px&#x27;: 30, color: &#x27;orange&#x27;}&quot;&gt;Lucas
+          &lt;/div&gt;
+        &lt;/mat-tab&gt;
+      &lt;/mat-tab-group&gt;
+    &lt;/mat-sidenav&gt;
+    &lt;mat-sidenav-content &gt;
+
+
+      &lt;mat-grid-list #grid rowHeight&#x3D;&quot;3:2&quot; gutterSize&#x3D;&quot;8px&quot;&gt;
+        &lt;mat-grid-tile *ngFor&#x3D;&quot;let dog of dogs&quot; [rowspan]&#x3D;&quot;dog.row&quot; @myInsertRemoveTrigger&gt;
+          &lt;mat-grid-tile-header&gt;
+            &lt;h2 mat-line&gt;{{dog.t}}&lt;/h2&gt;
+          &lt;/mat-grid-tile-header&gt;
+          &lt;img [src]&#x3D;&quot;dog.img&quot;&gt;
+          &lt;mat-grid-tile-footer&gt;
+            &lt;h3 mat-line&gt;{{dog.name}}&lt;/h3&gt;
+            &lt;button mat-icon-button (click)&#x3D;&quot;show(dog)&quot;&gt;
+              &lt;mat-icon&gt;info&lt;/mat-icon&gt;
+            &lt;/button&gt;
+          &lt;/mat-grid-tile-footer&gt;
+        &lt;/mat-grid-tile&gt;
+      &lt;/mat-grid-list&gt;
+
+      &lt;div fxLayout&#x3D;&quot;row wrap&quot; fxLayoutAlign&#x3D;&quot;space-evenly none&quot; fxLayoutGap&#x3D;&quot;25px&quot; fxLayout.xs&#x3D;&quot;column&quot; style&#x3D;&quot;height: auto;&quot;&gt;
+        &lt;mat-card *ngFor&#x3D;&quot;let dog of dogs&quot; fxFlex.lg&#x3D;&quot;16%&quot; fxFlex.md&#x3D;&quot;25%&quot; fxFlex.sm&#x3D;&quot;40%&quot; fxFlex.xs&#x3D;&quot;90%&quot;&gt;
+          &lt;mat-card-header&gt;
+            &lt;mat-card-title&gt;{{dog.t}}&lt;/mat-card-title&gt;
+            &lt;mat-card-subtitle&gt;{{dog.name}}&lt;/mat-card-subtitle&gt;
+          &lt;/mat-card-header&gt;
+          &lt;img mat-card-image [src]&#x3D;&quot;dog.img&quot; alt&#x3D;&quot;Photo of a Shiba Inu&quot;&gt;
+          &lt;mat-card-content&gt;
+            &lt;p&gt;
+              The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+              A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+              bred for hunting.
+            &lt;/p&gt;
+          &lt;/mat-card-content&gt;
+        &lt;/mat-card&gt;
+      &lt;/div&gt;
+    &lt;/mat-sidenav-content&gt;
+  &lt;/mat-sidenav-container&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./flex-layout.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.pets--marginRight{
+  margin-right: 0.5rem;
+}
+
+.mat-sidenav {
+   width: 30%;
+}
+
+.mat-sidenav-container{
+  height: 100vh;
+}
+
+.mat-grid-list {
+  max-height: 100px;
+  margin: 8px;
+}
+
+.mat-toolbar {
+  justify-content: space-between;
+}
+
+.buttonClose {
+  width: 100%;
+}
+
+.example-card {
+  max-width: 400px;
+  min-width: 100px;
+}
+
+.mat-card {
+  margin: 10px;
+}
+
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div [class.dark-theme]="isDarkTheme">  <mat-toolbar color="primary" fxLayout="row" fxLayoutAlign="space-between center">    <span>      <mat-icon class="pets--marginRight">pets</mat-icon>      Tests Pets    </span>    <div>      <button mat-icon-button [matMenuTriggerFor]="menu">        <mat-icon>more_vert</mat-icon>      </button>      <mat-menu #menu="matMenu" xPosition="before">        <button (click)="openDialog()" mat-menu-item>          <span>Setting</span>        </button>        <button mat-menu-item>          <span>Help</span>        </button>        <button mat-menu-item (click)="isDarkTheme=!isDarkTheme">          <span>Toggle theme</span>        </button>      </mat-menu>    </div>  </mat-toolbar>  <mat-sidenav-container class="example-container">    <mat-sidenav position="end" mode="side" #sidenav>      <mat-tab-group>        <mat-tab label="Details">          <p>Name : {{currentDog.name}}</p>          <p>T : {{currentDog.t}}</p>          <button class="buttonClose" mat-raised-button color="accent" (click)="sidenav.close()">Close</button>        </mat-tab>        <mat-tab label="Feed"  >          <div fxLayout="column" fxFlex fxLayoutAlign="end end">            <button mat-raised-button>Item 1</button>            <button mat-raised-button>Item 2</button>            <button mat-raised-button>Item 3</button>            <button mat-raised-button>Item 4</button>            <button mat-raised-button>Item 5</button>            <button mat-raised-button>Item 11</button>            <button mat-raised-button>Item 12</button>            <button mat-raised-button>Item 13</button>            <button mat-raised-button>Item 14</button>            <button mat-raised-button>Item 15</button>          </div>        </mat-tab>        <mat-tab label="Zone">          <div fxFlex fxLayout="row" fxLayout.xs="column" style="height: 100px;">            <div fxFlex="1 6 20%" fxFlexOrder.xs="2" style="background-color: indianred"></div>            <div fxFlex="3 1 60%" fxFlexOrder.xs="1" style="background-color: cornflowerblue"></div>            <div fxFlex="1 6 20%" fxFlexOrder.xs="3" style="background-color: aquamarine"></div>          </div>          <div            style="font-style: italic; height: 10%;"            [ngStyle.xs]="{\'font-size.px\': 10, \'background-color\': \'red\',color: \'blue\'}"            [ngStyle.sm]="{\'font-size.px\': 20, \'background-color\': \'blue\',color: \'lightblue\'}"            [ngStyle.md]="{\'font-size.px\': 30, color: \'orange\'}">Lucas          </div>        </mat-tab>      </mat-tab-group>    </mat-sidenav>    <mat-sidenav-content >      <mat-grid-list #grid rowHeight="3:2" gutterSize="8px">        <mat-grid-tile *ngFor="let dog of dogs" [rowspan]="dog.row" @myInsertRemoveTrigger>          <mat-grid-tile-header>            <h2 mat-line>{{dog.t}}</h2>          </mat-grid-tile-header>          <img [src]="dog.img">          <mat-grid-tile-footer>            <h3 mat-line>{{dog.name}}</h3>            <button mat-icon-button (click)="show(dog)">              <mat-icon>info</mat-icon>            </button>          </mat-grid-tile-footer>        </mat-grid-tile>      </mat-grid-list>      <div fxLayout="row wrap" fxLayoutAlign="space-evenly none" fxLayoutGap="25px" fxLayout.xs="column" style="height: auto;">        <mat-card *ngFor="let dog of dogs" fxFlex.lg="16%" fxFlex.md="25%" fxFlex.sm="40%" fxFlex.xs="90%">          <mat-card-header>            <mat-card-title>{{dog.t}}</mat-card-title>            <mat-card-subtitle>{{dog.name}}</mat-card-subtitle>          </mat-card-header>          <img mat-card-image [src]="dog.img" alt="Photo of a Shiba Inu">          <mat-card-content>            <p>              The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.              A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally              bred for hunting.            </p>          </mat-card-content>        </mat-card>      </div>    </mat-sidenav-content>  </mat-sidenav-container></div></div>'
+    var COMPONENTS = [{'name': 'AdressFormComponent', 'selector': 'app-adress-form'},{'name': 'AgGridComponent', 'selector': 'app-ag-grid'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'DashboardComponent', 'selector': 'app-dashboard'},{'name': 'FlexLayoutComponent', 'selector': 'app-flex-layout'},{'name': 'NavMainComponent', 'selector': 'app-nav-main'},{'name': 'SettingComponent', 'selector': 'app-setting'},{'name': 'TableComponent', 'selector': 'app-table'},{'name': 'TreeComponent', 'selector': 'app-tree'},{'name': 'VerticalTimelineComponent', 'selector': 'app-vertical-timeline'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'FlexLayoutComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'FlexLayoutComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

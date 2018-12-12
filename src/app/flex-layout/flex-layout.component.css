@@ -1,0 +1,34 @@
+.pets--marginRight{
+  margin-right: 0.5rem;
+}
+
+.mat-sidenav {
+   width: 30%;
+}
+
+.mat-sidenav-container{
+  height: 100vh;
+}
+
+.mat-grid-list {
+  max-height: 100px;
+  margin: 8px;
+}
+
+.mat-toolbar {
+  justify-content: space-between;
+}
+
+.buttonClose {
+  width: 100%;
+}
+
+.example-card {
+  max-width: 400px;
+  min-width: 100px;
+}
+
+.mat-card {
+  margin: 10px;
+}
+

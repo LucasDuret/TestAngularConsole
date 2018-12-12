@@ -1,0 +1,98 @@
+<div [class.dark-theme]="isDarkTheme">
+  <mat-toolbar color="primary" fxLayout="row" fxLayoutAlign="space-between center">
+    <span>
+      <mat-icon class="pets--marginRight">pets</mat-icon>
+      Tests Pets
+    </span>
+    <div>
+      <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu" xPosition="before">
+        <button (click)="openDialog()" mat-menu-item>
+          <span>Setting</span>
+        </button>
+        <button mat-menu-item>
+          <span>Help</span>
+        </button>
+        <button mat-menu-item (click)="isDarkTheme=!isDarkTheme">
+          <span>Toggle theme</span>
+        </button>
+      </mat-menu>
+    </div>
+  </mat-toolbar>
+  <mat-sidenav-container class="example-container">
+    <mat-sidenav position="end" mode="side" #sidenav>
+
+      <mat-tab-group>
+        <mat-tab label="Details">
+          <p>Name : {{currentDog.name}}</p>
+          <p>T : {{currentDog.t}}</p>
+          <button class="buttonClose" mat-raised-button color="accent" (click)="sidenav.close()">Close</button>
+        </mat-tab>
+        <mat-tab label="Feed"  >
+          <div fxLayout="column" fxFlex fxLayoutAlign="end end">
+            <button mat-raised-button>Item 1</button>
+            <button mat-raised-button>Item 2</button>
+            <button mat-raised-button>Item 3</button>
+            <button mat-raised-button>Item 4</button>
+            <button mat-raised-button>Item 5</button>
+            <button mat-raised-button>Item 11</button>
+            <button mat-raised-button>Item 12</button>
+            <button mat-raised-button>Item 13</button>
+            <button mat-raised-button>Item 14</button>
+            <button mat-raised-button>Item 15</button>
+          </div>
+        </mat-tab>
+        <mat-tab label="Zone">
+          <div fxFlex fxLayout="row" fxLayout.xs="column" style="height: 100px;">
+            <div fxFlex="1 6 20%" fxFlexOrder.xs="2" style="background-color: indianred"></div>
+            <div fxFlex="3 1 60%" fxFlexOrder.xs="1" style="background-color: cornflowerblue"></div>
+            <div fxFlex="1 6 20%" fxFlexOrder.xs="3" style="background-color: aquamarine"></div>
+          </div>
+          <div
+            style="font-style: italic; height: 10%;"
+            [ngStyle.xs]="{'font-size.px': 10, 'background-color': 'red',color: 'blue'}"
+            [ngStyle.sm]="{'font-size.px': 20, 'background-color': 'blue',color: 'lightblue'}"
+            [ngStyle.md]="{'font-size.px': 30, color: 'orange'}">Lucas
+          </div>
+        </mat-tab>
+      </mat-tab-group>
+    </mat-sidenav>
+    <mat-sidenav-content >
+
+
+      <mat-grid-list #grid rowHeight="3:2" gutterSize="8px">
+        <mat-grid-tile *ngFor="let dog of dogs" [rowspan]="dog.row" @myInsertRemoveTrigger>
+          <mat-grid-tile-header>
+            <h2 mat-line>{{dog.t}}</h2>
+          </mat-grid-tile-header>
+          <img [src]="dog.img">
+          <mat-grid-tile-footer>
+            <h3 mat-line>{{dog.name}}</h3>
+            <button mat-icon-button (click)="show(dog)">
+              <mat-icon>info</mat-icon>
+            </button>
+          </mat-grid-tile-footer>
+        </mat-grid-tile>
+      </mat-grid-list>
+
+      <div fxLayout="row wrap" fxLayoutAlign="space-evenly none" fxLayoutGap="25px" fxLayout.xs="column" style="height: auto;">
+        <mat-card *ngFor="let dog of dogs" fxFlex.lg="16%" fxFlex.md="25%" fxFlex.sm="40%" fxFlex.xs="90%">
+          <mat-card-header>
+            <mat-card-title>{{dog.t}}</mat-card-title>
+            <mat-card-subtitle>{{dog.name}}</mat-card-subtitle>
+          </mat-card-header>
+          <img mat-card-image [src]="dog.img" alt="Photo of a Shiba Inu">
+          <mat-card-content>
+            <p>
+              The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+              A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+              bred for hunting.
+            </p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
